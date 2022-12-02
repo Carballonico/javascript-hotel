@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="Cuerpo" id="Cuerpo">
+        <div class="formulario" id="formulario" >
+            <form >
+                <label for="Nombre">Nombre:</label><br>
+                <input type="text" id="Nombre" name="Nombre"><br>
+                <label for="Nif">Nif:</label><br>
+                <input type="text" id="Nif" name="Nif">
+            </form>    
+            <button class="btn" id="botonIniciar">Iniciar Session</button>
+            <button class="btn" id="botonRegistrar">Registrarse</button>
+        </div>
+        <nav id='menu'>
+            <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+            <ul>
+              <li id="home"><a >Home</a></li>
+              <li id="reservar"><a >Reservar</a></li>
+              <li id="cancelar"><a >Cancelar Reserva</a></li>
+              <li><a class='dropdown-arrow' >Mostrar por:</a>
+                <ul class='sub-menus'>
+                  <li id="opnif"><a >Nif</a></li>
+                  <li id="opnombre"><a >Nombre</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+    
+    <h2 class="status" id="status">Bienvenido</h2>
+    <div class="parent" id="container">
+        
+
+
+    </div>
+    <button class="btn" id="botonReservar">Reservar</button>
+    <button class="btn" id="botonCancelareserva">Cancelar reserva</button>
+    <script src="index.js"></script>
+</div>
+</body>
+</html>
